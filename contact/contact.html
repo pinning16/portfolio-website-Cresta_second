@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- font link -->
+    <!-- <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <meta name="description" content="for protfolio">
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- ポートフォリオ用模写コーディングサイト -->
+    <title>Cresta_second_contact(カンプからの模写ページコーディング)</title>
+</head>
+<body>
+    <!-- start header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <h1 class="header__logo"><a href="../index.html">Cresta Design</a></h1>
+                </div>
+                <!-- start pv nav -->
+                <nav class="header__right">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="../index.html#concept">Concept</a></li>
+                        <li class="header__item"><a href="../index.html#works">Works</a></li>
+                        <li class="header__item"><a href="../index.html#service">Service</a></li>
+                        <li class="header__item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- end pv nav -->
+                <!-- start sp nav ハンバーガーメニュー -->
+                <nav class="sp-nav">
+                    <ul class="sp-nav__list">
+                        <li class="sp-nav__item"><a href="../index.html#concept">Concept</a></li>
+                        <li class="sp-nav__item"><a href="../index.html#works">Works</a></li>
+                        <li class="sp-nav__item"><a href="../index.html#service">Service</a></li>
+                        <li class="sp-nav__item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="navToggle">
+                    <span class="navToggle__span"></span>
+                    <span class="navToggle__span"></span>
+                    <span class="navToggle__span"></span>
+                </div>
+                <!-- end ハンバーガーメニュー -->
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <main>
+        <!-- start mv -->
+        <section class="mv">
+                <div class="mv__text">
+                    <h2 class="mv__title">Contact</h2>
+                    <p class="mv__bottom">Contact us</p>
+                </div>
+        </section>
+        <!-- start contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <!-- お問い合わせフォーム -->
+                <form id="js-form" class="contact__box" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSetjOFmjqjauuU6Ai4-NidLOpuQKX26BV3Z2hfofKP1sLT7eA/formResponse" method="post" novalidate>
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <label class="contact__label">お問い合わせ内容</label>
+                            <div class="contact__checkbox-wrapper">
+                                <input class="contact__checkbox" type="checkbox" name="entry.666539468" value="資料請求" id="checkboxA"><label for="checkboxA" class="contact__checkbox-text">資料請求</label>
+                                <input class="contact__checkbox" type="checkbox" name="entry.666539468" value="お電話でのご相談を希望" id="checkboxB"><label for="checkboxB" class="contact__checkbox-text">お電話でのご相談を希望</label>
+                                <input class="contact__checkbox" type="checkbox" name="entry.666539468" value="申し込み" id="checkboxC"><label for="checkboxC" class="contact__checkbox-text">申し込み</label>
+                            </div>
+                        </li>
+                        <li class="contact__item">
+                            <label for="yourname" class="contact__label">担当者名
+                                <span class="contact__note">必須</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="yourname"
+                                name="entry.1534967751"
+                                required
+                                class="contact__text-input validate[required]"
+                                data-errormessage-value-missing="必須項目を入力してください"
+                                data-prompt-position="topRight"
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <label for="tel" class="contact__label">電話番号
+                                <span class="contact__note">必須</span>
+                            </label>
+                            <input
+                                type="phone"
+                                id="phone"
+                                name="entry.1190379548"
+                                required
+                                class="contact__text-input validate[required,custom[phone]]"
+                                data-errormessage-value-missing="必須項目を入力してください"
+                                data-errormessage-custom-error="電話番号の形式で入力してください"
+                                data-prompt-position="topRight"
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <label for="email" class="contact__label">メールアドレス
+                                <span class="contact__note">必須</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="entry.680552868"
+                                required
+                                class="contact__text-input validate[required,custom[email]]"
+                                data-errormessage-value-missing="必須項目を入力してください"
+                                data-errormessage-custom-error="メールアドレスの形式で入力してください"
+                                data-prompt-position="topRight"
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <label for="content" class="contact__label">
+                                その他
+                            </label>
+                            <textarea
+                                id="content"
+                                name="entry.122186094"
+                                rows="10"
+                                class="contact__textarea"
+                            ></textarea>
+                            <!-- 空白注意 -->
+                        </li>
+                    </ul>
+                    <div class="contact__submit-wrapper">
+                        <div class="contact__inner">
+                            <button type="submit" id="js-submit" class="contact__button button--disabled button--fadeout" disabled>submit</button>
+                        </div>
+                        <p class="contact__end-message">★お問い合わせいただきありがとうございました</p>
+                        <p class="contact__false-message">送信が失敗しました</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <small class="footer__copy">©︎cresta.design all rights reserved</small>
+        </div>
+    </footer>
+
+
+        <!----------------------------------jQuery---------------------------------->
+
+    <!-- jQueryライブラリの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jsファイルの読み込み-->
+    <script src="js/import.js"></script>
+    <!-- jQuery jQuery-Validation-Engineフォームバリデーション の読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-ja.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

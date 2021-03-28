@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- javascript Swiiperスライト CDNでCSSを読み込み-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
+    <!-- fontawesomeの読み込み -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- font link -->
+    <!-- <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”?> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <!-- ノーマライズCSSの読み込み -->
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description" content="for protfolio">
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- ポートフォリオ用模写コーディングサイト -->
+    <title>★Cresta_second(カンプからの模写ページコーディング)</title>
+</head>
+<body>
+    <!-- star header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <p class="header__logo"><a href="#">Cresta Design</a></p>
+                </div>
+                <!-- start pv nav -->
+                <nav class="header__right">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#concept">Concept</a></li>
+                        <li class="header__item"><a href="#works">Works</a></li>
+                        <li class="header__item"><a href="#service">Service</a></li>
+                        <li class="header__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- end pv nav -->
+                <!-- start ハンバガーメニュー -->
+                <nav class="sp-nav">
+                    <ul class="sp-nav__list">
+                        <li class="sp-nav__item"><a href="#concept">Concept</a></li>
+                        <li class="sp-nav__item"><a href="#works">Works</a></li>
+                        <li class="sp-nav__item"><a href="#service">Service</a></li>
+                        <li class="sp-nav__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="navToggle">
+                    <span class="navToggle__span"></span>
+                    <span class="navToggle__span"></span>
+                    <span class="navToggle__span"></span>
+                </div>
+                <!-- end ハンバガーメニュー -->
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <main>
+        <!-- start mv -->
+        <div class="swiper-container">
+            <!-- Sliderのラッパー(各スライドを内包する箱みたいなイメージ) -->
+            <div class="swiper-wrapper">
+                <!-- Slideのコンテンツ -->
+                <div class="swiper-slide">
+                    <img class="swiper-slide-img" src="img/bg/fv-bgi_01.png"　srcset="img/bg/fv-bgi_01.png 1x, img/bg/fv-bgi_01@2x.png 2x" width="1440" height="752" alt="CrestaSecondMv1" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide-img" src="img/bg/fv-bgi_02.png" srcset="img/bg/fv-bgi_02.png 1x, img/bg/fv-bgi_02@2x.png 2x" width="1440" height="752" alt="CrestaSecondMv2" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide-img" src="img/bg/fv-bgi_03.png" srcset="img/bg/fv-bgi_03.png 1x, img/bg/fv-bgi_03@2x.png 2x" width="1440" height="752" alt="CrestaSecondMv3" loading="lazy">
+                </div>
+            </div>
+                <h1 class="swiper-text">
+                    <p class="swiper-text-top">Design for Smile.<br>
+                    <span class="swiper-text-bottom">快適なオフィスをデザインする</span></p>
+                </h1>
+        </div>
+        <!-- start concept -->
+        <section id="concept" class="concept">
+            <div class="section__container">
+                <h2 class="section__top-left">CONCEPT</h2>
+            </div>
+            <div class="container">
+                <h3 class="concept__title">“働きたくなる空間”をデザインすることで人々を幸せにする。</h3>
+                <div class="concept__box">
+                    <p class="concept__text">私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。</p>
+                    <img class="concept__img" src="img/img/concept-image.png" srcset="img/img/concept-image.png 1x, img/img/concept-image@2x.png 2x" alt="concept" width="440px" height="240px" loading="lazy">
+                </div>
+            </div>
+            <div class="section__container">
+                <p class="section__bottom-right">OurConcept</p>
+            </div>
+        </section>
+        <!-- end concept -->
+        <!-- start works -->
+        <section id="works" class="works">
+            <div class="section__container">
+                <h2 class="section__top-right">Works</h2>
+            </div>
+            <div class="container">
+                <ul class="works__list">
+                    <li class="works__item">
+                        <figure class="works__photo">
+                            <img class="works__img" src="img/icon/card-img01.png" srcset="img/icon/card-img01.png 1x,img/icon/card-img01@2x.png" width="320px" height="200px" alt="card1" loading="lazy">
+                        </figure>
+                        <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                    </li>
+                    <li class="works__item">
+                        <figure class="works__photo">
+                            <img class="works__img" src="img/icon/card-img02.png" srcset="img/icon/card-img02.png 1x, img/icon/card-img02@2x.png 2x" width="320px" height="200px" alt="card2" loading="lazy">
+                        </figure>
+                        <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+                    </li>
+                    <li class="works__item">
+                        <figure class="works__photo">
+                            <img class="works__img" src="img/icon/card-img03.png" srcset="img/icon/card-img03.png 1x, img/icon/card-img03@2x.png 2x" width="320px" height="200px" alt="card3" loading="lazy">
+                        </figure>
+                        <p class="works__text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                    </li>
+                </ul>
+                <div class="section__btn">
+                    <a class="section__btn-link">View more</a>
+                </div>
+            </div>
+                <div class="section__container">
+                    <p class="section__bottom-left">Our Works</p>
+                </div>
+        </section>
+        <!-- end works -->
+        <!-- start service  -->
+        <section id="service" class="service">
+            <div class="section__container">
+                <h2 class="section__top-left">Service</h2>
+            </div>
+            <ul class="service__list">
+                <li class="service__item first">
+                    <a class="service__link">Hearing</a>
+                </li>
+                <li class="service__item second">
+                    <a class="service__link">Planning</a>
+                </li>
+                <li class="service__item third">
+                    <a class="service__link">Direction</a>
+                </li>
+            </ul>
+            <div class="section__container">
+                <p class="section__bottom-right">Our Service</p>
+            </div>
+        </section>
+        <!-- end service -->
+        <!-- start contact -->
+        <section id="contact" class="contact">
+            <div class="section__container">
+                <h2 class="section__top-right">Contact</h2>
+            </div>
+            <p class="contact__text">お気軽にご相談ください。</p>
+            <div class="section__btn">
+                <a class="section__btn-link" href="./contact/contact.html">Contact</a>
+            </div>
+
+            <div class="section__container">
+                <p class="section__bottom-left">Contact us</p>
+            </div>
+        </section>
+        <!-- end contact -->
+    </main>
+    <!-- start footer -->
+    <footer>
+        <div class="footer">
+            <small class="footer__copy">©︎cresta.design all rights reserved</small>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+<!----------------------------------jQuery---------------------------------->
+<!-- jQueryライブラリの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- スライト CDNでjQueryを読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<!-- jsファイルの読み込み-->
+<script src="js/import.js"></script>
+
+<!-- start jQuery スムーズスクロール トップへ戻る -->
+    <div id="js-scroll-top">
+        <a href="#" class="js-scroll-top__link">
+            <!-- <i class="fas fa-angle-double-up"></i> -->
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+<!-- end jQuery スムーズスクロール トップへ戻る -->
+<div id="js-nav-top"></div>
+</body>
+</html>
+
+
+
